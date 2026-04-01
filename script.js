@@ -14,10 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-/**
- * Função simples para interatividade
- * No futuro, aqui poderia iniciar o seu jogo ou abrir um modal
- */
+
 function exibirMensagemSucesso() {
     alert('Incrível! Você está vendo a lógica separada da estrutura.');
     console.log('Interação realizada com sucesso no projeto Agrinho 2026.');
