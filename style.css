@@ -1,0 +1,80 @@
+/* Central de Variáveis - Facilita a manutenção e garante consistência */
+:root {
+    --verde-agrinho: #2ecc71;
+    --verde-escuro: #27ae60;
+    --amarelo-destaque: #f1c40f;
+    --cor-texto-escuro: #2d3436;
+    --branco-puro: #ffffff;
+    --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset Global - Garante que o site comece do zero em qualquer navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--cor-texto-escuro);
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho Semântico */
+.cabecalho {
+    background-color: var(--verde-agrinho);
+    color: var(--branco-puro);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: var(--sombra-suave);
+}
+
+/* Layout Principal */
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 2rem;
+}
+
+/* Card com Design Moderno (Clean Design) */
+.card-informativo {
+    background: var(--branco-puro);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--sombra-suave);
+    border-top: 5px solid var(--verde-agrinho);
+}
+
+/* Botão com Feedback Visual (Hover) */
+.btn-primario {
+    background-color: var(--amarelo-destaque);
+    color: var(--cor-texto-escuro);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: #d4ac0d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé Organizado */
+.rodape {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
